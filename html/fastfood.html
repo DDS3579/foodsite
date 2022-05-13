@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FastFood | Resturant Site | DDS</title>
+
+    <!-- Logo -->
+    <link
+      rel="icon"
+      href="https://simply-delicious-food.com/wp-content/uploads/2019/07/Pancake-board-2.jpg"
+    />
+
+    <!-- CSS -->
+
+    <!-- Mine -->
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <!-- Boxicons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- JS -->
+
+    <!-- Mine -->
+    <script src="../script/script.js"></script>
+
+    <!-- Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Boxicons -->
+    <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-success fixed-top" id="changeBag">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">Resturant Site</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end bg-success"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title text-white" id="offcanvasNavbarLabel">
+              <i class="bx bx-cart" type="logo" animation="spin"></i>&nbsp;
+              Resturant Site
+            </h5>
+            <button
+              type="button"
+              class="btn-close text-reset"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="../index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="../index.html#about"
+                  >About Us</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="../index.html#contact"
+                  >Contact Us</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="../index.html#search"
+                  >Search</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle active"
+                  href="#"
+                  id="offcanvasNavbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  More
+                </a>
+                <ul
+                  class="dropdown-menu"
+                  aria-labelledby="offcanvasNavbarDropdown"
+                >
+                  <li>
+                    <a class="dropdown-item" href="../index.html#category"
+                      >Categories</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../index.html#food-opt"
+                      >Food Options</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <br />
+    <br />
+    <!-- Navbar Ends -->
+    <div><img src="../img/fastfood.png" alt="" class="bg-img-opening" /></div>
+    <br />
+    <div class="content">
+      <main>
+        <h1 class="title-fastfood" style="color: blue">FastFood 🤩</h1>
+        <br />
+        <p class="sweets-desc">Find and Enjoy your favourite FastFood!</p>
+        <br />
+        <p class="sweets-desc">Types:</p>
+        <br />
+        <hr />
+        <br />
+      </main>
+      <div class="menu">
+        <div class="grid-menu" data-bs-toggle="modal" data-bs-target="#burger">
+          <img
+            src="https://thedeliciousspoon.com/wp-content/uploads/2019/04/Best-Burger-Blog-Post-2-of-4-500x500.jpg"
+            alt="burger"
+            class="img-1"
+            style="width: 850; height: 850"
+          />
+          <p class="figcaption-menu">Burger</p>
+        </div>
+        <div class="grid-menu" data-bs-toggle="modal" data-bs-target="#pizza">
+          <img
+            src="https://www.indianhealthyrecipes.com/wp-content/uploads/2015/10/pizza-recipe-1-500x500.jpg"
+            alt="Pizza"
+            class="img-1"
+            style="width: 850; height: 850"
+          />
+          <p class="figcaption-menu">Pizza</p>
+        </div>
+        <div
+          class="grid-menu"
+          data-bs-toggle="modal"
+          data-bs-target="#french-fries"
+        >
+          <img
+            src="https://handivn.com/wp-content/uploads/2020/03/Instant-Pot-French-Fries-new-500x500-1.jpg"
+            alt="French Fries"
+            class="img-1"
+            style="width: 850; height: 850"
+          />
+          <p class="figcaption-menu">French Fries</p>
+        </div>
+        <div
+          class="grid-menu"
+          data-bs-toggle="modal"
+          data-bs-target="#syabhale"
+        >
+          <img
+            src="https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/33c93dad-10ed-4c80-a4c1-7b48a6d397bb_Go-Biz_20210830_153344.jpeg"
+            alt="Syavbhale"
+            class="img-1"
+            style="width: 850; height: 850"
+          />
+          <p class="figcaption-menu">Syabhale</p>
+        </div>
+      </div>
+      <br />
+      <hr />
+      <br />
+      <div class="menu">
+        <div
+          class="grid-menu"
+          data-bs-toggle="modal"
+          data-bs-target="#sandwich"
+        >
+          <img
+            src="https://www.ruchiskitchen.com/wp-content/uploads/2015/01/Grilled-Margherita-Sandwich-1-500x500.jpg"
+            alt="sandwich"
+            class="img-1"
+            style="width: 850; height: 850"
+          />
+          <p class="figcaption-menu">Sandwich</p>
+        </div>
+        <div class="grid-menu" data-bs-toggle="modal" data-bs-target="#momo">
+          <img
+            src="https://honeyguideapps.com/sites/default/files/dhapu_0.jpg"
+            alt="Momo"
+            class="img-1"
+            style="width: 850; height: 850"
+          />
+          <p class="figcaption-menu">Momo</p>
+        </div>
+        <div class="grid-menu" data-bs-toggle="modal" data-bs-target="#pakoda">
+          <img
+            src="https://www.whiskaffair.com/wp-content/uploads/2020/07/Onion-Pakoda-3-500x500.jpg"
+            alt="Pakoda"
+            class="img-1"
+            style="width: 850; height: 850"
+          />
+          <p class="figcaption-menu">Pakoda</p>
+        </div>
+        <div
+          class="grid-menu"
+          data-bs-toggle="modal"
+          data-bs-target="#chicken-items"
+        >
+          <img
+            src="https://www.keyingredient.com/uploads/media/19/ff/24ceb337df2e2193117cf9f4dc2ea61edf57.jpg?1560439644"
+            alt="Chicken"
+            class="img-1"
+            style="width: 850; height: 850"
+          />
+          <p class="figcaption-menu">Chicken Items</p>
+        </div>
+      </div>
+      <br />
+      <br />
+      <!-- Burger Modal Start -->
+      <div
+        class="modal fade"
+        id="burger"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-center" id="staticBackdropLabel">
+                Burger
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <br />
+              <div class="inside-modal-breakfast">
+                <div class="img-inside-modal-breakfast">
+                  <img
+                    src="https://www.saltandlavender.com/wp-content/uploads/2016/05/ground-chicken-burgers-1-500x500.jpg"
+                    alt=""
+                    class="img-inside-modal-breakfast-img"
+                  />
+                </div>
+                <div
+                  class="text-inside-modal-breakfast"
+                  style="display: block; margin-left: auto; margin-right: auto"
+                >
+                  <h1 style="text-align: center">Burger</h1>
+                  <br />
+                  <p>We have 4 types of Burger</p>
+                  <br />
+                  <div class="ul-li-inside">
+                    <ul>
+                      <li>Veg Burger</li>
+                      <li>Chicken Burger</li>
+                      <li>Extra Cheese Burger</li>
+                      <li>Crunchy Chicken Burger</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br />
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-danger"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <a
+                type="button"
+                class="btn btn-success"
+                href="./place-order.html"
+              >
+                Place Order
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Burger Modal End -->
+      <!-- Pizza Modal Start -->
+      <div
+        class="modal fade"
+        id="pizza"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-center" id="staticBackdropLabel">
+                Pizza
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <br />
+              <div class="inside-modal-breakfast">
+                <div class="img-inside-modal-breakfast">
+                  <img
+                    src="https://bakingamoment.com/wp-content/uploads/2013/08/IMG_8669-pizza-dough-recipe-500x500.jpg"
+                    alt=""
+                    class="img-inside-modal-breakfast-img"
+                  />
+                </div>
+                <div
+                  class="text-inside-modal-breakfast"
+                  style="display: block; margin-left: auto; margin-right: auto"
+                >
+                  <h1 style="text-align: center">pizza</h1>
+                  <br />
+                  <p>We have 5 types of Pizza</p>
+                  <br />
+                  <div class="ul-li-inside">
+                    <ul>
+                      <li>Pepperoni Pizza</li>
+                      <li>Double-Chesse Pizza</li>
+                      <li>Chesse Pizza</li>
+                      <li>Chicken Pizza</li>
+                      <li>Mixed Veg Pizza</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br />
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-danger"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <a
+                type="button"
+                class="btn btn-success"
+                href="./place-order.html"
+              >
+                Place Order
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Pizza Modal End -->
+      <!-- French Fries Modal Start -->
+      <div
+        class="modal fade"
+        id="french-fries"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-center" id="staticBackdropLabel">
+                French Fries
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <br />
+              <div class="inside-modal-breakfast">
+                <div class="img-inside-modal-breakfast">
+                  <img
+                    src="https://thecozycook.com/wp-content/uploads/2020/02/French-Fry-Seasoning-500x500.jpg"
+                    alt="gulab-jamun"
+                    class="img-inside-modal-breakfast-img"
+                  />
+                </div>
+                <div
+                  class="text-inside-modal-breakfast"
+                  style="display: block; margin-left: auto; margin-right: auto"
+                >
+                  <h1 style="text-align: center">French Fries</h1>
+                  <br />
+                  <p>We have 2 types of French Fries</p>
+                  <br />
+                  <div class="ul-li-inside">
+                    <ul>
+                      <li>Classic Crunchy French Fries</li>
+                      <li>Cream-Onion Flavour French Fries</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br />
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-danger"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <a
+                type="button"
+                class="btn btn-success"
+                href="./place-order.html"
+              >
+                Place Order
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- French Fries Modal End -->
+      <!-- Syabhale Modal Start -->
+      <div
+        class="modal fade"
+        id="syabhale"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-center" id="staticBackdropLabel">
+                Syabhale
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <br />
+              <div class="inside-modal-breakfast">
+                <div class="img-inside-modal-breakfast">
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_ZiaouniYzOPUYWfPgu4ZjK47hDzYO_rClGEfD-jeK-6ip-ZTcYOqSjoE5wFodKCebYo&usqp=CAU"
+                    alt=""
+                    class="img-inside-modal-breakfast-img"
+                  />
+                </div>
+                <div
+                  class="text-inside-modal-breakfast"
+                  style="display: block; margin-left: auto; margin-right: auto"
+                >
+                  <h1 style="text-align: center">Syabhale</h1>
+                  <br />
+                  <p>We have 2 types of Syabhale</p>
+                  <br />
+                  <div class="ul-li-inside">
+                    <ul>
+                      <li>Veg Syabhale</li>
+                      <li>Chicken Syabhale</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br />
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-danger"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <a
+                type="button"
+                class="btn btn-success"
+                href="./place-order.html"
+              >
+                Place Order
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Syabhale Modal End -->
+      <!-- Sandwich Modal Start -->
+      <div
+        class="modal fade"
+        id="sandwich"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-center" id="staticBackdropLabel">
+                Sandwich
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <br />
+              <div class="inside-modal-breakfast">
+                <div class="img-inside-modal-breakfast">
+                  <img
+                    src="https://www.indianhealthyrecipes.com/wp-content/uploads/2019/05/club-sandwich-recipe-500x500.jpg"
+                    alt="Sandwich"
+                    class="img-inside-modal-breakfast-img"
+                  />
+                </div>
+                <div
+                  class="text-inside-modal-breakfast"
+                  style="display: block; margin-left: auto; margin-right: auto"
+                >
+                  <h1 style="text-align: center">Sandwich</h1>
+                  <br />
+                  <p>We have 5 types of Sandwich</p>
+                  <br />
+                  <div class="ul-li-inside">
+                    <ul>
+                      <li>Mixed Veg Sandwich</li>
+                      <li>Mayo Veg Sandwich</li>
+                      <li>Grilled Cheese Sandwhich</li>
+                      <li>Cruncy Chicken Sandwich</li>
+                      <li>Sasuage Sandwich</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br />
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-danger"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <a
+                type="button"
+                class="btn btn-success"
+                href="./place-order.html"
+              >
+                Place Order
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Sandwich Modal End -->
+      <!-- Momo Modal Start -->
+      <div
+        class="modal fade"
+        id="momo"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-center" id="staticBackdropLabel">
+                Momo
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <br />
+              <div class="inside-modal-breakfast">
+                <div class="img-inside-modal-breakfast">
+                  <img
+                    src="https://greenbowl2soul.com/wp-content/uploads/2018/09/Veg-momos-recipe-500x500.jpg"
+                    alt=""
+                    class="img-inside-modal-breakfast-img"
+                  />
+                </div>
+                <div
+                  class="text-inside-modal-breakfast"
+                  style="display: block; margin-left: auto; margin-right: auto"
+                >
+                  <h1 style="text-align: center">Momo</h1>
+                  <br />
+                  <p>We have 5 types of Momo</p>
+                  <br />
+                  <div class="ul-li-inside">
+                    <ul>
+                      <li>Veg Momo (Steam)</li>
+                      <li>Veg Momo (Fry)</li>
+                      <li>Chicken Momo (Steam)</li>
+                      <li>Chicken Momo (Fry)</li>
+                      <li>Wheat Flour Momo (Steam)</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br />
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-danger"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <a
+                type="button"
+                class="btn btn-success"
+                href="./place-order.html"
+              >
+                Place Order
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Momo Modal End -->
+      <!-- Pakoda Modal Start -->
+      <div
+        class="modal fade"
+        id="pakoda"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-center" id="staticBackdropLabel">
+                Pakoda
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <br />
+              <div class="inside-modal-breakfast">
+                <div class="img-inside-modal-breakfast">
+                  <img
+                    src="https://www.cookwithmanali.com/wp-content/uploads/2022/01/Air-Fryer-Onion-Pakoda-500x500.jpg"
+                    alt=""
+                    class="img-inside-modal-breakfast-img"
+                  />
+                </div>
+                <div
+                  class="text-inside-modal-breakfast"
+                  style="display: block; margin-left: auto; margin-right: auto"
+                >
+                  <h1 style="text-align: center">Pakoda</h1>
+                  <br />
+                  <p>We have 5 types of Pakoda</p>
+                  <br />
+                  <div class="ul-li-inside">
+                    <ul>
+                      <li>Onion Pakoda</li>
+                      <li>Potato Pakoda</li>
+                      <li>Paneer Pakoda</li>
+                      <li>Chicken Pakoda</li>
+                      <li>Cauliflower Pakoda</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br />
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-danger"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <a
+                type="button"
+                class="btn btn-success"
+                href="./place-order.html"
+              >
+                Place Order
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Pakoda Modal End -->
+      <!-- Chicken Items Modal Start -->
+      <div
+        class="modal fade"
+        id="chicken-items"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-center" id="staticBackdropLabel">
+                Chicken Items
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <br />
+              <div class="inside-modal-breakfast">
+                <div class="img-inside-modal-breakfast">
+                  <img
+                    src="https://scontent.fktm16-1.fna.fbcdn.net/v/t1.6435-9/73308228_731845253946762_7780974984947564544_n.jpg?_nc_cat=100&ccb=1-6&_nc_sid=9267fe&_nc_ohc=k3q5J-ijGgMAX-Tja2R&_nc_ht=scontent.fktm16-1.fna&oh=00_AT9qgNYnQR6a0dHpHzcN6ZUx8udLzZX5V6a4MW_iEp96ZA&oe=62A2FA99"
+                    alt="chicken items"
+                    class="img-inside-modal-breakfast-img"
+                  />
+                </div>
+                <div
+                  class="text-inside-modal-breakfast"
+                  style="display: block; margin-left: auto; margin-right: auto"
+                >
+                  <h1 style="margin-left: 55px; display: block">
+                    Chicken Items
+                  </h1>
+                  <br />
+                  <p style="text-align: center; display: block">We have 10 Chicken Items</p>
+                  <br />
+                  <div class="ul-li-inside">
+                    <ul class="ul-li-inside-1">
+                      <li>Chicken Tandoori</li>
+                      <li>Standard Chicken Curry</li>
+                      <li>Chicken Biriyani</li>
+                      <li>Chicken Roast (10pcs/5pcs)</li>
+                      <li>Chicken Butter Masala</li>
+                    </ul>
+                    <ul class="ul-li-inside-2">
+                      <li>Boneless Chicken Curry</li>
+                      <li>Chicken Nuggets</li>
+                      <li>Chicken Kabab</li>
+                      <li>Chicken Chilli</li>
+                      <li>Chicken Keema Naan</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br />
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-danger"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <a
+                type="button"
+                class="btn btn-success"
+                href="./place-order.html"
+              >
+                Place Order
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Chicken Modal End -->
+      <hr />
+      <br />
+      <h2
+        style="
+          color: #f76120;
+          font-family: cursive;
+          margin-left: 10px;
+          margin-right: 10px;
+        "
+      >
+        Note: &nbsp;&nbsp;Chicken Items tab contains all the different Chicken
+        Snacks available and if you are searching for other chicken items you
+        can find them inside the particular product's tab. Thank You!
+      </h2>
+      <br />
+      <hr />
+      <br />
+      <h1 class="end" style="text-align: center">
+        Hope you like our Service 😄😀😊
+      </h1>
+      <br />
+      <footer>
+        <br />
+        <h1>
+          For any <strong>Suggestions</strong> or
+          <strong>Ratings</strong> please type down below:
+        </h1>
+        <br />
+        <form action="https://formspree.io/f/xknypbvz" method="post">
+          <div class="input-group">
+            <textarea
+              class="form-control text-review"
+              aria-label="With textarea"
+              name="review-area"
+            ></textarea>
+            <br />
+            <button type="submit" class="btn btn-success">Send</button>
+          </div>
+        </form>
+      </footer>
+      <br />
+      <br />
+      <div class="copyright">
+        <p class="copyright-p">Copyright © 2022</p>
+      </div>
+    </div>
+  </body>
+</html>

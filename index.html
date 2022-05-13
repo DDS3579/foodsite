@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resturant Site | DDS</title>
+
+    <!-- Logo -->
+    <link
+      rel="icon"
+      href="https://media.istockphoto.com/photos/poultry-roast-chicken-drumstick-isolated-on-white-background-picture-id182359988?k=20&m=182359988&s=612x612&w=0&h=hGh-dWqSXdAhW5J29oY3-gTg4Jxbwh34875E4O4B4XY="
+    />
+
+    <!-- CSS -->
+
+    <!-- Mine -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <!-- Boxicons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- JS -->
+
+    <!-- Mine -->
+    <script src="script/script.js"></script>
+
+    <!-- Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Boxicons -->
+    <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-success fixed-top" id="changeBag">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Resturant Site</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end bg-success"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title text-white" id="offcanvasNavbarLabel">
+              <i class="bx bx-cart" type="logo" animation="spin"></i>&nbsp;
+              Resturant Site
+            </h5>
+            <button
+              type="button"
+              class="btn-close text-reset"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#about">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#contact">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#search">Search</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle active"
+                  href="#"
+                  id="offcanvasNavbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  More
+                </a>
+                <ul
+                  class="dropdown-menu"
+                  aria-labelledby="offcanvasNavbarDropdown"
+                >
+                  <li>
+                    <a class="dropdown-item" href="#category">Categories</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#food-opt">Food Options</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <br />
+    <br />
+    <!-- Navbar Ends -->
+    <div>
+      <img src="./img/background-content.png" alt="" class="bg-img-opening" />
+    </div>
+    <div class="content">
+      <main class="search-btn-div" id="search">
+        <h1>Search for the food you love! 😍😋</h1>
+        <br />
+        <!-- <form class="form">
+          <label for="search">Choose from the following:</label
+          >&nbsp;&nbsp;&nbsp;&nbsp;
+          <input
+            placeholder="Search"
+            class="search-input"
+            list="options"
+            id="search-input"
+          />
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          <button class="search-btn" type="submit" onclick="getData()">
+            Search
+          </button>
+          <datalist id="options">
+            <option value="Breakfast" id="oi">Breakfast</option>
+            <option value="Lunch" id="oii">Lunch</option>
+            <option value="Snacks" id="oiii">Snacks</option>
+            <option value="Dinner" id="oiv">Dinner</option>
+            <option value="Fast Food" id="ov">Fast Food</option>
+            <option value="Desert" id="ovi">Desert</option>
+            <option value="Sweets" id="ovii">Sweets</option>
+          </datalist>
+        </form> -->
+        <div class="btn-group" id="search">
+          <a
+            class="btn btn-primary btn-drop"
+            type="button"
+            id="defaultDropdown"
+            data-bs-toggle="dropdown"
+            data-bs-auto-close="true"
+            aria-expanded="false"
+          >
+            All Categories Dropdown
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="defaultDropdown">
+            <li><a class="dropdown-item" href="./html/breakfast.html">Breakfast</a></li>
+            <li><a class="dropdown-item" href="./html/lunch.html">Lunch</a></li>
+            <li><a class="dropdown-item" href="./html/snacks.html">Snacks</a></li>
+            <li><a class="dropdown-item" href="./html/dinner.html">Dinner</a></li>
+            <li><hr class="dropdown-divider" /></li>
+            <li><a class="dropdown-item" href="./html/fastfood.html">Fast Food</a></li>
+            <li><a class="dropdown-item" href="./html/sweets.html">Sweets</a></li>
+          </ul>
+        </div>
+        <br />
+        <br />
+        <h1>We serve Experiences! 😊</h1>
+      </main>
+      <br />
+      <hr />
+      <br />
+      <h1 class="title" id="category">Choose the category</h1>
+      <br />
+      <div class="menu">
+        <div
+          class="grid-menu"
+          data-bs-toggle="modal"
+          data-bs-target="#breakfasts"
+        >
+          <img
+            src="https://simply-delicious-food.com/wp-content/uploads/2018/10/breakfast-board.jpg"
+            alt=""
+            class="img-1"
+            style="width: 850; height: 850"
+          />
+          <p class="figcaption-menu">Breakfast 😍</p>
+        </div>
+        <div class="grid-menu" data-bs-toggle="modal" data-bs-target="#lunch">
+          <img
+            src="https://simply-delicious-food.com/wp-content/uploads/2020/06/Lamb-burger-with-tzatziki-6.jpg"
+            alt=""
+            class="img-1"
+            style="width: 850; height: 850"
+          />
+          <p class="figcaption-menu">Lunch 😚</p>
+        </div>
+        <div class="grid-menu" data-bs-toggle="modal" data-bs-target="#snacks">
+          <img
+            src="https://static.toiimg.com/thumb/54659021.cms?imgsize=275086&width=850&height=850"
+            alt=""
+            class="img-1"
+            style="width: 850; height: 850"
+          />
+          <p class="figcaption-menu">Snacks 😘</p>
+        </div>
+        <div class="grid-menu" data-bs-toggle="modal" data-bs-target="#dinner">
+          <img
+            src="https://www.vidhyashomecooking.com/wp-content/uploads/2020/08/SouthIndianLunchThaliFeature-645x650.jpg"
+            alt=""
+            class="img-1"
+            style="width: 850; height: 850"
+          />
+          <p class="figcaption-menu">Dinner 🥰</p>
+        </div>
+      </div>
+    </div>
+    <!-- JS toggle Enabled Divs -->
+    <div class="parent-toggler-JS">
+      <!-- Bootstrap Modal testing -->
+      <!-- Breakfast Start -->
+      <div
+        class="modal fade"
+        id="breakfasts"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-center" id="staticBackdropLabel">
+                Breakfast
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <h1
+                id="title-h1-toggle-js-breakfast"
+                style="
+                  text-align: center;
+                  color: deepskyblue;
+                  font-family: cursive;
+                "
+              >
+                Vegetarian Breakfast
+              </h1>
+              <br />
+              <div class="menu">
+                <div class="breakfast-veg">
+                  <img
+                    src="https://www.plattershare.com/storage/2021/09/5b0e7647d2c64-1.jpg"
+                    alt="indian-cusine-breakfast"
+                    class="img-1"
+                    style="width: 850; height: 850"
+                  />
+                  <p class="figcaption-menu p-toggler-js-veg" id="indian-veg">
+                    Indian
+                  </p>
+                </div>
+                <div class="breakfast-veg">
+                  <img
+                    src="https://simply-delicious-food.com/wp-content/uploads/2018/10/breakfast-board.jpg"
+                    alt="continental-breakfast"
+                    class="img-1"
+                    style="width: 850; height: 850"
+                  />
+                  <p
+                    class="figcaption-menu p-toggler-js-veg"
+                    id="continental-veg"
+                  >
+                    Continental
+                  </p>
+                </div>
+                <div class="breakfast-veg">
+                  <img
+                    src="https://www.kindpng.com/picc/m/152-1523162_non-veg-dishes-png-transparent-png.png"
+                    alt="american-cusine-breakfast"
+                    class="img-1"
+                    style="width: 850; height: 850"
+                  />
+                  <p class="figcaption-menu p-toggler-js-veg" id="american-veg">
+                    American
+                  </p>
+                </div>
+                <div class="breakfast-veg">
+                  <img
+                    src="https://static.toiimg.com/thumb/52566811.cms?imgsize=220658&width=800&height=800"
+                    alt="chinese-breakfast"
+                    class="img-1"
+                    style="width: 850; height: 850"
+                  />
+                  <p class="figcaption-menu p-toggler-js-veg" id="chinese-veg">
+                    Chinese
+                  </p>
+                </div>
+              </div>
+              <h1
+                id="title-h1-toggle-js-breakfast"
+                style="
+                  text-align: center;
+                  color: deepskyblue;
+                  font-family: cursive;
+                "
+              >
+                Non-Vegetarian Breakfast
+              </h1>
+              <br />
+              <div class="menu">
+                <div class="breakfast-non-veg">
+                  <img
+                    src="https://www.saffrontrail.com/wp-content/uploads/2016/06/indian-egg-recipes-egg-pepper-fry.1024x1024.jpg"
+                    alt="indian-cusine-breakfast"
+                    class="img-1"
+                    style="width: 850; height: 850"
+                  />
+                  <p
+                    class="figcaption-menu p-toggler-js-non-veg"
+                    id="indian-non-veg"
+                  >
+                    Indian
+                  </p>
+                </div>
+                <div class="breakfast-veg">
+                  <img
+                    src="https://withlocals-com-res.cloudinary.com/image/upload/w_412,h_400,c_fill,g_auto,q_auto,dpr_3.0,f_auto/e3da544b883a1abf67f86fa4bb0d7f30"
+                    alt="continental-breakfast"
+                    class="img-1"
+                    style="width: 850; height: 850"
+                  />
+                  <p
+                    class="figcaption-menu p-toggler-js-non-veg"
+                    id="continental-non-veg"
+                  >
+                    Continental
+                  </p>
+                </div>
+                <div class="breakfast-veg">
+                  <img
+                    src="https://www.kindpng.com/picc/m/152-1523162_non-veg-dishes-png-transparent-png.png"
+                    alt="american-cusine-breakfast"
+                    class="img-1"
+                    style="width: 850; height: 850"
+                  />
+                  <p
+                    class="figcaption-menu p-toggler-js-non-veg"
+                    id="american-non-veg"
+                  >
+                    American
+                  </p>
+                </div>
+                <div class="breakfast-veg">
+                  <img
+                    src="https://static.toiimg.com/photo/60275824.cms"
+                    alt="chinese-breakfast"
+                    class="img-1"
+                    style="width: 850; height: 850"
+                  />
+                  <p
+                    class="figcaption-menu p-toggler-js-non-veg"
+                    id="chinese-non-veg"
+                  >
+                    Chinese
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-danger"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <a
+                type="button"
+                class="btn btn-success"
+                href="./html/breakfast.html"
+              >
+                Click to explore
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Breakfast End -->
+      <!-- Bootstrap Modal testing OFF -->
+      <!-- Lunch Start -->
+      <div
+        class="modal fade"
+        id="lunch"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-center" id="staticBackdropLabel">
+                Lunch
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <h1
+                id="title-h1-toggle-js-lunch"
+                style="text-align: center; color: #ba03fc; font-family: cursive"
+              >
+                Vegetarian Lunch
+              </h1>
+              <br />
+              <div class="menu">
+                <div class="lunch-veg">
+                  <img
+                    src="https://www.plattershare.com/storage/2021/09/5b0e7647d2c64-1.jpg"
+                    alt="indian-cusine-breakfast"
+                    class="img-1"
+                    style="width: 850; height: 850"
+                  />
+                  <p class="figcaption-menu p-toggler-js-veg">Indian</p>
+                </div>
+                <div class="lunch-veg">
+                  <img
+                    src="https://simply-delicious-food.com/wp-content/uploads/2018/10/breakfast-board.jpg"
+                    alt="continental-breakfast"
+                    class="img-1"
+                    style="width: 850; height: 850"
+                  />
+                  <p class="figcaption-menu p-toggler-js-veg">Continental</p>
+                </div>
+                <div class="lunch-veg">
+                  <img
+                    src="https://simplyvegetarian777.com/wp-content/uploads/2016/05/image-34-1024x1024.png"
+                    alt="american-cusine-breakfast"
+                    class="img-1"
+                    style="width: 850; height: 850"
+                  />
+                  <p class="figcaption-menu p-toggler-js-veg">American</p>
+                </div>
+                <div class="lunch-veg">
+                  <img
+                    src="https://static.toiimg.com/thumb/52566811.cms?imgsize=220658&width=800&height=800"
+                    alt="chinese-breakfast"
+                    class="img-1"
+                    style="width: 850; height: 850"
+                  />
+                  <p class="figcaption-menu p-toggler-js-veg">Chinese</p>
+                </div>
+              </div>
+              <h1
+                id="title-h1-toggle-js-lunch"
+                style="text-align: center; color: #ba03fc; font-family: cursive"
+              >
+                Non-Vegetarian Lunch
+              </h1>
+              <br />
+              <div class="menu">
+                <div class="lunch-non-veg">
+                  <img
+                    src="https://www.saffrontrail.com/wp-content/uploads/2016/06/indian-egg-recipes-egg-pepper-fry.1024x1024.jpg"
+                    alt="indian-cusine-breakfast"
+                    class="img-1"
+                    style="width: 850; height: 850"
+                  />
+                  <p class="figcaption-menu p-toggler-js-non-veg">Indian</p>
+                </div>
+                <div class="lunch-non-veg">
+                  <img
+                    src="https://withlocals-com-res.cloudinary.com/image/upload/w_412,h_400,c_fill,g_auto,q_auto,dpr_3.0,f_auto/e3da544b883a1abf67f86fa4bb0d7f30"
+                    alt="continental-lunch"
+                    class="img-1"
+                    style="width: 850; height: 850"
+                  />
+                  <p class="figcaption-menu p-toggler-js-non-veg">
+                    Continental
+                  </p>
+                </div>
+                <div class="lunch-non-veg">
+                  <img
+                    src="https://www.kindpng.com/picc/m/152-1523162_non-veg-dishes-png-transparent-png.png"
+                    alt="american-cusine-breakfast"
+                    class="img-1"
+                    style="width: 850; height: 850"
+                  />
+                  <p class="figcaption-menu p-toggler-js-non-veg">American</p>
+                </div>
+                <div class="lunch-non-veg">
+                  <img
+                    src="https://static.toiimg.com/photo/60275824.cms"
+                    alt="chinese-breakfast"
+                    class="img-1"
+                    style="width: 850; height: 850"
+                  />
+                  <p class="figcaption-menu p-toggler-js-non-veg">Chinese</p>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-danger"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <a type="button" class="btn btn-success" href="./html/lunch.html">
+                Click to Explore
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Lunch End -->
+    <!-- Snacks Start -->
+    <div
+      class="modal fade"
+      id="snacks"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title text-center" id="staticBackdropLabel">
+              Snacks
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <h1
+              id="title-h1-toggle-js-snacks"
+              style="text-align: center; color: #ba03fc; font-family: cursive"
+            >
+              Vegetarian Snacks
+            </h1>
+            <br />
+            <div class="menu">
+              <div class="snacks-veg">
+                <img
+                  src="https://www.plattershare.com/storage/2021/09/5b0e7647d2c64-1.jpg"
+                  alt="indian-cusine-breakfast"
+                  class="img-1"
+                  style="width: 850; height: 850"
+                />
+                <p class="figcaption-menu p-toggler-js-veg">Indian</p>
+              </div>
+              <div class="snacks-veg">
+                <img
+                  src="https://simply-delicious-food.com/wp-content/uploads/2018/10/breakfast-board.jpg"
+                  alt="continental-breakfast"
+                  class="img-1"
+                  style="width: 850; height: 850"
+                />
+                <p class="figcaption-menu p-toggler-js-veg">Continental</p>
+              </div>
+              <div class="snacks-veg">
+                <img
+                  src="https://simplyvegetarian777.com/wp-content/uploads/2016/05/image-34-1024x1024.png"
+                  alt="american-cusine-breakfast"
+                  class="img-1"
+                  style="width: 850; height: 850"
+                />
+                <p class="figcaption-menu p-toggler-js-veg">American</p>
+              </div>
+              <div class="snacks-veg">
+                <img
+                  src="https://static.toiimg.com/thumb/52566811.cms?imgsize=220658&width=800&height=800"
+                  alt="chinese-breakfast"
+                  class="img-1"
+                  style="width: 850; height: 850"
+                />
+                <p class="figcaption-menu p-toggler-js-veg">Chinese</p>
+              </div>
+            </div>
+            <h1
+              id="title-h1-toggle-js-snacks"
+              style="text-align: center; color: #ba03fc; font-family: cursive"
+            >
+              Non-Vegetarian Snacks
+            </h1>
+            <br />
+            <div class="menu">
+              <div class="snacks-non-veg">
+                <img
+                  src="https://www.saffrontrail.com/wp-content/uploads/2016/06/indian-egg-recipes-egg-pepper-fry.1024x1024.jpg"
+                  alt="indian-cusine-breakfast"
+                  class="img-1"
+                  style="width: 850; height: 850"
+                />
+                <p class="figcaption-menu p-toggler-js-non-veg">Indian</p>
+              </div>
+              <div class="snacks-non-veg">
+                <img
+                  src="https://withlocals-com-res.cloudinary.com/image/upload/w_412,h_400,c_fill,g_auto,q_auto,dpr_3.0,f_auto/e3da544b883a1abf67f86fa4bb0d7f30"
+                  alt="continental-lunch"
+                  class="img-1"
+                  style="width: 850; height: 850"
+                />
+                <p class="figcaption-menu p-toggler-js-non-veg">Continental</p>
+              </div>
+              <div class="snacks-non-veg">
+                <img
+                  src="https://www.kindpng.com/picc/m/152-1523162_non-veg-dishes-png-transparent-png.png"
+                  alt="american-cusine-breakfast"
+                  class="img-1"
+                  style="width: 850; height: 850"
+                />
+                <p class="figcaption-menu p-toggler-js-non-veg">American</p>
+              </div>
+              <div class="snacks-non-veg">
+                <img
+                  src="https://static.toiimg.com/photo/60275824.cms"
+                  alt="chinese-breakfast"
+                  class="img-1"
+                  style="width: 850; height: 850"
+                />
+                <p class="figcaption-menu p-toggler-js-non-veg">Chinese</p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <a type="button" class="btn btn-success" href="./html/snacks.html">
+              Click to Explore
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Snacks End -->
+    <!-- Dinner Start -->
+    <div
+      class="modal fade"
+      id="dinner"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title text-center" id="staticBackdropLabel">
+              Dinner
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <h1
+              id="title-h1-toggle-js-dinner"
+              style="text-align: center; color: #ba03fc; font-family: cursive"
+            >
+              Vegetarian Dinner
+            </h1>
+            <br />
+            <div class="menu">
+              <div class="dinner-veg">
+                <img
+                  src="https://www.plattershare.com/storage/2021/09/5b0e7647d2c64-1.jpg"
+                  alt="indian-cusine-breakfast"
+                  class="img-1"
+                  style="width: 850; height: 850"
+                />
+                <p class="figcaption-menu p-toggler-js-veg">Indian</p>
+              </div>
+              <div class="dinner-veg">
+                <img
+                  src="https://simply-delicious-food.com/wp-content/uploads/2018/10/breakfast-board.jpg"
+                  alt="continental-breakfast"
+                  class="img-1"
+                  style="width: 850; height: 850"
+                />
+                <p class="figcaption-menu p-toggler-js-veg">Continental</p>
+              </div>
+              <div class="dinner-veg">
+                <img
+                  src="https://simplyvegetarian777.com/wp-content/uploads/2016/05/image-34-1024x1024.png"
+                  alt="american-cusine-breakfast"
+                  class="img-1"
+                  style="width: 850; height: 850"
+                />
+                <p class="figcaption-menu p-toggler-js-veg">American</p>
+              </div>
+              <div class="dinner-veg">
+                <img
+                  src="https://static.toiimg.com/thumb/52566811.cms?imgsize=220658&width=800&height=800"
+                  alt="chinese-breakfast"
+                  class="img-1"
+                  style="width: 850; height: 850"
+                />
+                <p class="figcaption-menu p-toggler-js-veg">Chinese</p>
+              </div>
+            </div>
+            <h1
+              id="title-h1-toggle-js-snacks"
+              style="text-align: center; color: #ba03fc; font-family: cursive"
+            >
+              Non-Vegetarian Dinner
+            </h1>
+            <br />
+            <div class="menu">
+              <div class="dinner-non-veg">
+                <img
+                  src="https://www.saffrontrail.com/wp-content/uploads/2016/06/indian-egg-recipes-egg-pepper-fry.1024x1024.jpg"
+                  alt="indian-cusine-breakfast"
+                  class="img-1"
+                  style="width: 850; height: 850"
+                />
+                <p class="figcaption-menu p-toggler-js-non-veg">Indian</p>
+              </div>
+              <div class="dinner-non-veg">
+                <img
+                  src="https://withlocals-com-res.cloudinary.com/image/upload/w_412,h_400,c_fill,g_auto,q_auto,dpr_3.0,f_auto/e3da544b883a1abf67f86fa4bb0d7f30"
+                  alt="continental-lunch"
+                  class="img-1"
+                  style="width: 850; height: 850"
+                />
+                <p class="figcaption-menu p-toggler-js-non-veg">Continental</p>
+              </div>
+              <div class="dinner-non-veg">
+                <img
+                  src="https://www.kindpng.com/picc/m/152-1523162_non-veg-dishes-png-transparent-png.png"
+                  alt="american-cusine-breakfast"
+                  class="img-1"
+                  style="width: 850; height: 850"
+                />
+                <p class="figcaption-menu p-toggler-js-non-veg">American</p>
+              </div>
+              <div class="dinner-non-veg">
+                <img
+                  src="https://static.toiimg.com/photo/60275824.cms"
+                  alt="chinese-breakfast"
+                  class="img-1"
+                  style="width: 850; height: 850"
+                />
+                <p class="figcaption-menu p-toggler-js-non-veg">Chinese</p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <a type="button" class="btn btn-success" href="./html/dinner.html">
+              Click to Explore
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Dinner End -->
+    <br />
+    <hr />
+    <br />
+    <div class="about-us" id="about">
+      <br />
+      <h1 class="about-title">About Me</h1>
+      <br />
+      <img src="./img/me.jpg" alt="me" class="about-img" />
+      <br />
+      <h2 class="about-title">Divya D.Sharma</h2>
+      <br />
+      <p class="about-p">
+        Hello, Guys! What's Up? Hope you are doing well. I am Divya D.Sharma the
+        owner of this design. I am currently learning
+        <strong>Web Design & Development</strong>. So, this is one of those
+        pratice projects hope you like it. Thank You! <br />
+        <strong>My Portfolio - </strong
+        ><a href="https://aboutdds.netlify.app/" class="about-p"
+          ><code>Click Here</code></a
+        >
+      </p>
+      <br />
+    </div>
+    <br />
+    <hr />
+    <br />
+    <div class="delivery-options" id="food-opt">
+      <br />
+      <h1 class="delivery-title">Food Options</h1>
+      <br />
+      <div class="menu-opt">
+        <div class="options">
+          <img
+            src="https://thumbs.dreamstime.com/b/take-away-bento-box-japanese-wrapping-cloth-furoshiki-vector-japanese-style-58279035.jpg"
+            alt="take-away"
+            class="img-1"
+          />
+          <p class="options-text">Take Away</p>
+        </div>
+        <div class="options">
+          <img
+            src="https://play-lh.googleusercontent.com/ltHTtAH-Ls6eEiWVRE1WhpRh2xDteVk9GPbYKCJkMR67S8Su7Qgtc0rMEGxm5yyCHg"
+            alt="take-away"
+            class="img-1"
+          />
+          <p class="options-text">Delivery</p>
+        </div>
+      </div>
+      <br />
+    </div>
+    <br />
+    <hr />
+    <br />
+    <div class="contact-me about-us" id="contact">
+      <h1 class="about-title">Contact Us</h1>
+      <br />
+      <ul>
+        <li>
+          Email -
+          <a
+            href="mailto:divyadarsheel.dds@gmail.com"
+            class="btn btn-primary fs-2"
+            target="_blank"
+            >Click Here</a
+          >
+        </li>
+        <br />
+        <li>
+          Instagram -
+          <a
+            href="https://www.instagram.com/divyadarsheel.dds/"
+            class="btn btn-primary fs-2"
+            target="_blank"
+            >Click Here</a
+          >
+        </li>
+        <br />
+        <li>
+          GitHub -
+          <a
+            href="https://github.com/DDS3579"
+            class="btn btn-primary fs-2"
+            target="_blank"
+            >Click Here</a
+          >
+        </li>
+        <br />
+        <li>
+          Blogger -
+          <a
+            href="https://qbwithdds.blogspot.com/"
+            class="btn btn-primary fs-2"
+            target="_blank"
+            >Click Here</a
+          >
+        </li>
+        <br />
+      </ul>
+    </div>
+    <br />
+    <hr />
+    <br />
+    <footer>
+      <br />
+      <h1>
+        For any <strong>Suggestions</strong> or <strong>Ratings</strong> please
+        type down below:
+      </h1>
+      <br />
+      <form action="https://formspree.io/f/xknypbvz" method="post">
+        <div class="input-group">
+          <textarea
+            class="form-control text-review"
+            aria-label="With textarea"
+            name="review-area"
+          ></textarea>
+          <br />
+          <button type="submit" class="btn btn-success">Send</button>
+        </div>
+      </form>
+    </footer>
+    <br />
+    <br />
+    <div class="copyright">
+      <p class="copyright-p">Copyright © 2022</p>
+    </div>
+    <!-- End -->
+  </body>
+  <script>
+    // function getData() {
+    //   var showData = document.getElementById("search-input").value;
+    //   console.log(showData);
+    //   alert(showData);
+    //   location.replace("./html/breakfast");
+    // }
+  </script>
+  <script src="./script.js"></script>
+</html>
